@@ -1,0 +1,245 @@
+_____ _                __            _         ___       _     _      
+/__   \ |__   ___    /\ \ \___   ___ | |__     / _ \_   _(_) __| | ___  ®
+  / /\/ '_ \ / _ \  /  \/ / _ \ / _ \| '_ \   / /_\/ | | | |/ _` |/ _ \ ©
+ / /  | | | |  __/ / /\  / (_) | (_) | |_) | / /_\\| |_| | | (_| |  __/
+ \/   |_| |_|\___| \_\ \/ \___/ \___/|_.__/  \____/ \__,_|_|\__,_|\___|
+                                                                       
+
+
+ First and foremost, it is important for you to understand that 'hacking' is a broad term. There are many aspects
+to it, most of which require several programming skills, but that shouldn't stop you from using the tools made
+available by the internet for you to take advantage of.
+ Go to the HTMLdog website and learn some HTML first, it is a great website and you will progress in no time. Also,
+consider Python as your first programming language; it is a tradition to recommend Python to newbies because it is
+the fundamental and appropriate language that will kickstart you in the world of computing. So, now that you are
+set and ready to continue with the quest, allow me to present to you a simplistic and minimalistic reference guide.
+
+On a side note, before you start, make sure your internet connection has some sort of protection, either through a
+proxy or a VPN. DO NOT TAKE ANY RECOMMENDATIONS FROM OTHER ANONYMOUS MEMBERS, EVEN OPS. 
+They could be trying to hook you up with a VPN-service that is cooperating with the feds. 
+Do your own research on your VPN, Privacy policy, Terms of Agreement etc. NOBODY IS GOING TO JAIL FOR YOU. 
+After that, pay with anonymous payment methods, again, do your own research on those methods too.
+
+[PS: Do NOT perform DDoS attacks while on VPN. They may protect your data from the destination, but don't go as far
+ as trusting them when you're sending endless packets over their servers. Needless to say, your safety is not of any
+ concern to me so take care of yourself first.]
+
+
+
+----------
+OS Picking
+----------
+For hacking specifically, it is recommended to use open source Operating Systems (OSes) such as Linux distributions
+that have root (Administrator) privileges in order to get the most out of the tools you use. Let me give you some
+ordered examples:
+
+FOR LINUX NOOBS
+1) Mint — great to learn Linux and for hacking as well, tools can be added easily, and has a lovely desktop.
+2) Ubuntu — same as mint, but better approach toward learning Linux than just looking good. Mint is based on it.
+3) Tails — strongly recommended as a Virtual Machine, it is closest to anonymity you can get.
+
+Despite what other anons and the internet is saying, Kali isn't useful to you unless you have your own server to work on. 
+The OS is broken and insecure, and is built for security pentesters. 
+Kali will provide very poor security unless you know what you're doing. 
+
+--------------
+Wireless Cards
+--------------
+In case you do as I suggested above, and get yourself a Virtual Machine (VM) with either of the three recommended
+distributions, you will need a USB Wireless Network Adapter in order to be able to execute wireless attacks from it.
+This is needed because a Virtual Machine cannot share a single wireless card with the host machine. For the sake of
+convenience, price, accuracy, packet injection and sniffing capabilities, I strongly recommend a very widely used
+card called the Alfa AWUS-036NHA with the AR9271 chipset, which can be found by following the link directly below:
+http://www.simplewifi.com/alfa-802-11b-g-n-high-power-adapter-150mbps-atheros-ar9271-chipset.html
+
+
+
+---------
+Anonymity
+---------
+ There is a constant presence of fear in everyone's mind that our information is being monitored 24/7/365 by people
+behind monitors all day long, searching for private data and invading your personal life. Well, this conspiracy is
+something experienced by those who have something to hide from the authorities, whether it is illegal or possibly
+embarrassing.
+ Either way, there is one thing you must know — you will never be able to fully protect yourself while
+browsing on the internet. However, there are several tools and techniques you may embed in order to get as close as
+possible to being anonymous online. True anonymity lies in several layers of data transfer, which is difficult for
+an individual to achieve without knowledge of 3rd-party software that allows such possibilities.
+Remember, there's no magical tool that let's you be 100% anonymous online. 
+You will NEVER be 100% anonymous in a system that is designed to be traceable.
+ Let's get straight to the point. The following techniques will help to achieve a high anonymity level:
+
+• TOR — found at https://www.torproject.org/ it allows you to connect through several nodes before reaching a server,
+        and that way all data transfer stays private. For maximum browsing anonymity, 
+	use the TOR browser in combination with a good, paid VPN as well.
+
+• VPN — stands for Virtual Private Network and is a server that you connect through before you reach anything online.
+        From a security point of view, it is the safest and most anonymous tool to use, as long as you trust the VPN
+        provider.
+
+• Proxy — This is another possible way to achieve good anonymity, but is often slow and unreliable for torrenting or
+          downloading large files. Proxy websites can be found anywhere online, but preferably use proxy servers that
+          need configuration of the browser settings, since that will likely cause fewer javascript and HTML issues.
+
+• More Useful Tools/Guides
+
+		1) Anonymous file sharing: https://onionshare.org
+                2) File uploading: http://tinyupload.com/  and  https://anonfiles.com/
+		3) http://www.deepdotweb.com/jolly-rogers-security-guide-for-beginners/
+
+
+
+----------------
+DoS & DDoS Tools (don't use them unless instructed)
+----------------
+HOWEVER: if anybody tells you to use tools such as LOIC, XOIX, HOIC or any other similar tools, do not listen to them
+         since they obviously are not aware of the incredibly high risks of getting caught when using them. Tools that
+         end in OIC are easily traced to your IP address and expect to get in trouble if you use them. Besides, using
+         them on your own will cause no damage to public IPs due to the severe limitations. So, end point, forget it!
+======================================================================================================================
+TOR's Hammer (works on systems that have Python installed.)
+• Note: this tool allows the use of the TOR browser to prevent getting caught. I recommend and, in some ways, insist
+  that you do so, because nobody other than you is liable for the damage you will cause from using this tool.
+How to Set Up:
+0) Download it first, duh! http://sourceforge.net/projects/torshammer
+1) Download python. Note: Mac users have it preinstalled
+2) Place the torshammer folder (unpackaged) on your Desktop
+3) In the torshammer folder there will be a file called 'torshammer.py' that you will need to open with a text editor
+4) Inside the file, use the Find & Replace function to replace the three occurrences of '9050' with '9150' and save
+5) Open CMD or Terminal and type (without quotes) "cd Desktop" and then "cd torshammer"
+6) Now open the TOR browser and wait for your new identity. To ensure it works, visit at least 2 >DIFFERENT< websites
+7) In your CMD / Terminal type (without quotes) "./torshammer.py -t example.com -r 300 -T"
+   To understand the syntax of the command, 'cd' to the torshammer folder and type (without quotes) "./torshammer.py"
+
+Slowloris
+One of my favorite tools that I used when I started DoSing.
+IPV4 version: http://ha.ckers.org/slowloris/slowloris.pl
+IPV6 version: http://ha.ckers.org/slowloris/slowloris6.pl
+To download, simply copy the text to a file and save it as slowloris.pl and/or slowloris6.pl respectively.
+You will need perl in order to run Slowloris, tutorials of which can be found online.
+
+Ufonet
+>>> https://github.com/epsylon/ufonet
+I will not explain here how to set this up, since you have Google at your disposal.
+
+MDK3
+This is preinstalled on Kali Linux and it basically allows to deauthenticate any Wi-Fi routers in range by overloading
+them with empty packets until they can no longer operate, thus taking them down locally on your own (DoS).
+======================================================================================================================
+
+
+
+-----------------------
+Password Cracking Tools
+-----------------------
+Ophcrack
+Read info      >>> http://blog.codinghorror.com/rainbow-hash-cracking
+Download       >>> http://ophcrack.sourceforge.net
+
+L0phtCrack
+It is an alternative to Ophcrack and is used to crack Windows passwords from hashes.
+http://www.l0phtcrack.com/download.html
+
+John the Ripper
+>>> http://www.openwall.com/john
+
+Reaver
+This is specifically a WPA(&2) Wi-Fi cracking tool, supporting routers with WPS (Wireless Protected Setup) enabled
+It is preinstalled on Kali Linux, and hopefully on the other hacking Linux distributions too. It does NOT work
+on Windows, in fact Windows is the least reliable OS for hacking, so I regard it as a skiddie OS.
+
+Aircrack-ng
+Cracks WPE & WPA; it analyzes wireless encrypted packets and then tries to crack passwords via its cracking algorithm.
+http://www.aircrack-ng.org/install.html
+
+Hydra
+This uses brute force and dictionary attacks to crack any password that is on a specific wordlist. It is well built
+and is very configurable, giving you a wide range of options to pick from, and limits to set. Here's a great tutorial:
+http://null-byte.wonderhowto.com/how-to/hack-like-pro-crack-online-passwords-with-tamper-data-thc-hydra-0155374
+
+Hashcat
+Uses your GPU to crack hashes, very strong.
+http://hashcat.net/hashcat/
+
+--------------------------------
+Man In The Middle (MITM) Attacks
+--------------------------------
+Note: enable routing first, by typing in terminal (without quotes) "echo 1 > /proc/sys/net/ipv4/ip_forward"
+================================
+Wireshark
+Extremely configurable and versatile, and has close to no limitations as to functionality.
+Kali Linux has it preinstalled. For Windows and Mac, download it here: https://www.wireshark.org/download.html
+
+Ettercap
+As usual, it is preinstalled on Kali Linux. It performs marvellously, and supports 'driftnet' (for image capturing).
+>>> http://ettercap.github.io/ettercap/downloads.html
+
+
+
+----------------
+Website Scanning
+----------------
+nmap
+This is great for port scanning, checking whether a host is up, ping scan, TCP and UDP, etc.
+>>> http://nmap.org/download.html
+
+Nikto
+It performs comprehensive tests against web servers for items including potentially dangerous files, performs checks
+for outdated server versions, and version specific problems.
+>>> https://github.com/sullo/nikto
+
+Dmitry
+About it  >>>  http://linux.die.net/man/1/dmitry
+Download  >>>  http://packetstormsecurity.com/files/download/35796/DMitry-1.2a.tar.gz
+
+Vega
+A powerful vulnerability scanner.
+>>> https://subgraph.com/vega/download
+
+CL2 (filename)
+This is a simple web crawler written in Python that indexes all hyperlinks of a particular webpage and/or website.
+>>> https://ghostbin.com/paste/vg3af
+
+FTP-Spider
+Written in perl, it cleverly scans FTP servers and logs their directory structure, detects anonymous access & writable
+directories, and looks for user specified data.
+http://packetstormsecurity.com/files/35120/ftp-spider.pl.html
+
+Arachni
+This is a framework developed to assess web app security and evaluate them in real time.
+Read about it & download it here >>> http://www.arachni-scanner.com/
+
+
+
+--------------
+Useful To Note
+--------------
+Detailed information about IP addresses — http://www.ip-tracker.org
+A course I highly recommend you follow — http://offensive-security.com/metasploit-unleashed/Main_Page
+Find out what websites are built with — http://builtwith.com
+
+
+======================================================================================================================
+======================================================================================================================
+
+
+
+----------
+ALL IN ALL
+----------
+Conclusion: You are prepared for anything if you are able to apprehend the work that lies ahead, but let me tell you,
+            no one is going to endlessly spoon-feed you the information and knowledge, because all you will learn is
+            how to copy from someone else. I think the old saying "practice makes perfect" fits this pretty damn well
+            from my point of view, and I'm not saying that you can't ask anything, but if you want to learn fast, do
+            it the hard way and look it up yourself, that's all!
+
+
+For the record
+All tools used above are compatible with Linux distributions (apart from L0phtCrack) and are best used with the three
+OSes that I listed at the very beginning. In my personal opinion, and I'm sure many people would agree with me here,
+Windows is not suited best for the tools listed above. However, it would be useful for you to get hold of a Virtual
+Machine program in that case, such as VirtualBox (( https://www.virtualbox.org/wiki/Downloads )), and a disk image
+of a Linux distribution.
+
+
+If you read the whole lot, that should get you started, and remember to have fun! Good luck :D
